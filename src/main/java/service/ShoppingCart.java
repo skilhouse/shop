@@ -10,7 +10,6 @@ public class ShoppingCart {
         this.items = items;
     }
 
-    // Общая сумма без скидки
     public double getTotalPriceWithoutDiscount() {
         double sum = 0;
         for (Food item : items) {
@@ -19,7 +18,6 @@ public class ShoppingCart {
         return sum;
     }
 
-    // Общая сумма со скидкой
     public double getTotalPriceWithDiscount() {
         double sum = 0;
         for (Food item : items) {
